@@ -16,7 +16,7 @@ def proc_file(file):
         lines = lines.split('\n')
     for i, line in enumerate(lines):
         if i % 2 == 0:
-            word = line.replace('\n', '').replace('\n\r', '').replace('\r', '').replace('\r\n', '')
+            word = line.replace('\n', '').replace('\n\r', '').replace('\r', '').replace('\r\n', '').strip()
             words.append(word)
     return words
 
